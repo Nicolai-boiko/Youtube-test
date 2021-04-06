@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Mulish, Helvetica, sans-serif;
+}
+
+input {
+  outline: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 70px 20px 32px;
+}
+
+.menu-button {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 20px;
+  height: 17px;
+  border: none;
+  margin-right: 28px;
+  cursor: pointer;
+}
+
+.menu-line {
+  display: block;
+  background: #1f2022;
+  width: 20px;
+  height: 3px;
+  border-radius: 20px;
+}
+
+.logo {
+  padding-right: 59px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 17px;
+  border: 0;
+  background: #ebebeb;
+  mix-blend-mode: normal;
+  border-radius: 22px;
+  max-width: 830px;
+  width: 50%;
+}
+
+.input-search {
+  background-color: transparent;
+  border: none;
+  padding: 12px 23px;
+  width: 100%;
+}
+
+.button-search {
+  padding: 0;
+  width: 19px;
+  height: 19px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.icon-search {
+  fill: black;
+}
+
+.icon-video,
+.icon-notification,
+.icon-apps {
+  transition: all 0.15s ease-in-out;
+  opacity: 0.24;
+}
+
+.icon-video:hover,
+.icon-notification:hover,
+.icon-apps:hover {
+  opacity: 0.7;
+}
+
+a {
+  text-decoration: none;
+}
+.icons-link:not(:last-child) {
+  margin-right: 50px;
+}
+
+.user {
+  margin-left: 45px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
