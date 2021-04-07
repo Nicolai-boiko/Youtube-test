@@ -3,7 +3,9 @@
 }
 
 body {
-  font-family: Mulish, Helvetica, sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 input {
@@ -88,7 +90,7 @@ a {
 .icon-video,
 .icon-notification,
 .icon-apps {
-  transition: all 0.15s ease-in-out;
+  transition: all 0.1s ease-in-out;
   opacity: 0.24;
 }
 
@@ -124,13 +126,23 @@ a {
 }
 
 .nav-item {
-  display: flex;
-  align-items: center;
   margin-bottom: 28px;
 }
 
 .nav-link {
+  display: flex;
+  align-items: center;
   color: #898989;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ff0000;
+}
+
+.nav-link:hover .icon {
+  fill: #ff0000;
+  opacity: 100%;
 }
 
 .nav-item .icon {
@@ -140,4 +152,17 @@ a {
 
 .nav-text {
   margin-left: 13px;
+}
+
+.nav-image {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.nav-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 30px;
 }
