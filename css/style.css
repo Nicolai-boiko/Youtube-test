@@ -21,6 +21,12 @@ a {
   align-items: center;
   padding: 20px 70px 20px 32px;
   margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 2;
 }
 
 .menu-button {
@@ -115,7 +121,21 @@ a {
 }
 
 .siedbar {
+  width: 12%;
   padding-left: 32px;
+  position: fixed;
+  left: 0;
+  top: 114px;
+  height: calc(100% - 114px);
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.content {
+  width: 100%;
+  height: 400px;
+  margin-top: 85px;
+  padding-left: 13%;
 }
 
 .nav-menu {
@@ -165,4 +185,139 @@ a {
   font-size: 18px;
   line-height: 23px;
   margin-bottom: 30px;
+}
+
+.channel {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.channel-title {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.channel-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.channel-text {
+  color: #19202c;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+  margin-left: 20px;
+}
+
+.channel-text_additional {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #c2c2c2;
+}
+
+.video-card {
+  width: 90%;
+}
+
+.video-card-recommended {
+  width: 95%;
+}
+
+.video-thumb {
+  height: 150px;
+  overflow: hidden;
+  border-radius: 14px;
+  position: relative;
+}
+
+.video-thumb-recommended {
+  height: 250px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.thumbnail-recommended {
+  height: 250px;
+}
+
+.video-duration {
+  padding: 3px 9px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+}
+
+.video-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #19202c;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.video-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  line-height: 16px;
+  color: #c2c2c2;
+}
+
+.video-views {
+  margin-right: 5px;
+}
+
+.video-views::after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  background-color: #c2c2c2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.channel-button {
+  cursor: pointer;
+}
+
+.slider-buttons {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 66px;
+}
+
+.subscribe {
+  position: absolute;
+  right: 17%;
+  top: 10%;
+  background: #ff0000;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  width: 154px;
+  height: 40px;
 }
