@@ -193,7 +193,7 @@ a {
 }
 
 .channel-title {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   padding-top: 30px;
   margin-bottom: 30px;
