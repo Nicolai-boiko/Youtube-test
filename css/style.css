@@ -65,6 +65,7 @@ a {
   border-radius: 22px;
   max-width: 830px;
   width: 50%;
+  margin-right: 30px;
 }
 
 .input-search {
@@ -120,8 +121,8 @@ a {
   border-radius: 50%;
 }
 
-.siedbar {
-  width: 12%;
+.sidebar {
+  width: 220px;
   padding-left: 32px;
   position: fixed;
   left: 0;
@@ -135,7 +136,8 @@ a {
   width: 100%;
   height: 400px;
   margin-top: 85px;
-  padding-left: 13%;
+  padding-left: 270px;
+  padding-right: 70px;
 }
 
 .nav-menu {
@@ -299,7 +301,7 @@ a {
 
 .slider-buttons {
   position: absolute;
-  right: 10%;
+  right: 5%;
   top: 10%;
   display: flex;
   align-items: center;
@@ -309,7 +311,7 @@ a {
 
 .subscribe {
   position: absolute;
-  right: 17%;
+  right: 12%;
   top: 10%;
   background: #ff0000;
   border-radius: 20px;
@@ -320,4 +322,103 @@ a {
   border: none;
   width: 154px;
   height: 40px;
+}
+
+.mobile-sidebar,
+.mobile-search {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .icons {
+    display: none;
+  }
+  .user {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding-right: 32px;
+  }
+  .content {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .subscribe,
+  .channel-text_additional,
+  .sidebar,
+  .menu-button {
+    display: none;
+  }
+  .input-group {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    opacity: 0;
+    margin-left: 25px;
+    width: 75%;
+    transition: all 0.2s;
+  }
+
+  .input-group.is-open {
+    opacity: 1;
+    top: 20px;
+  }
+  .video-card,
+  .video-card-recommended {
+    width: 100%;
+  }
+  .logo {
+    padding-right: 20px;
+  }
+  .channel {
+    margin-bottom: 0;
+  }
+  .channel-title {
+    padding-top: 25px;
+    margin-bottom: 25px;
+  }
+  .slider-buttons {
+    right: 5%;
+    top: 35px;
+  }
+  .mobile-sidebar {
+    display: block;
+    position: fixed;
+    z-index: 4;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+  }
+
+  .mobile-sidebar .nav-link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-text {
+    margin-left: 0;
+  }
+
+  .mobile-sidebar .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: solid 1px #f1f1f1;
+    padding: 12px 32px;
+    margin-bottom: 0;
+  }
+
+  .mobile-search {
+    display: block;
+    margin-left: auto;
+  }
+
+  .user {
+    margin-left: 24px;
+  }
 }
